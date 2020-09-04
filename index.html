@@ -1,6 +1,7 @@
 <script>
-  function upload(){
-    var data = '{ "message": "test","content": "SGVsbG8gd29ybGQ=",}';
+var ghtoken = window.atob('ZjIxMjQwNjEwZGIwMWM4YTQ1YmQ0NmRlZmI1NTQ0N2IyZWZhZGI0OQ==');
+function upload(){
+    var data = '{ "message": "test",ghtoken,}';
         
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
@@ -11,7 +12,7 @@
         }
     });
     
-    xhr.open("PUT", "https://api.github.com/repos/Drew233/apitest/contents/test/testapi.md");
+    xhr.open("PUT", "https://api.github.com/repos/Drew233/apitest/contents/test/testssss.md");
     xhr.setRequestHeader("Authorization", "Bearer 763fbfcf97b87b54fdc3b82a417976b499d94df8");
     xhr.setRequestHeader("Content-Type", "text/plain");
     
